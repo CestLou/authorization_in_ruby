@@ -1,0 +1,7 @@
+<h1>~Login~</h1>
+<%= flash.inspect %>
+<%= form_for :user do |f| %>
+	<%= f.text_field :email, placeholder: "Email" %>
+	<%= f.text_field :password, placeholder: "Password" %>
+	<%= f.submit "Create Account" %>
+<% end %>
